@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container {
+            width: 1300px;
+            height: 100vh;
+            margin: auto;
+            position: relative;
+        }
+
+        .mid-container {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 35px;
+        }
+
+        .header {
+            background-color: aquamarine;
+            height: 150px;
+            font-size: xx-large;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .nav {
+            background-color: orange;
+            width: 20%;
+            order: 1;
+            display: inline-block;
+        }
+
+        .aside {
+            background-color: orangered;
+            width: 20%;
+            order: 3;
+            display: inline-block;
+        }
+
+        .section {
+            width: 60%;
+            order: 2;
+        }
+
+        .s-header {
+            background-color: white;
+            padding: 3px 0;
+            font-size: medium;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        .s-article {
+            background-color: blue;
+            display: inline-block;
+        }
+
+        .s-footer {
+            background-color: red;
+            display: inline-block;
+            margin-top: 3px;
+            font-style: italic;
+        }
+        
+        .footer {
+            background-color: grey;
+            height: 30px;
+            width: 1300px;
+            bottom: 0;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .footer .address {
+            order: 1;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        .footer .copyright {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Lorem Ipsum</div>
+        <div class="mid-container">
+            <div class="nav">
+                Vestibulum viverra laoreet velit.
+                <br>
+                Id ornare ex pretium non
+                <br>
+                Cras neque eros, maximus eu suscipit at
+                <br>
+                Porttitor in tellus. Proin pellentesque odio est
+                <br>
+                Ut auctor felis commodo sit amet. In tempus magna vestibulum leo sodales.
+                <br>
+                ut tempor massa maximus.
+                <br>
+                Aenean sodales vitae diam id tristique.
+                <br>
+                Sed dictum porttitor sapien, non tincidunt mauris feugiat in.
+                <br>
+                Ut aliquam sit amet nisl ornare posuere. Donec nunc ante
+                <br>
+                Commodo vel eros eu.
+                <br>
+                Fringilla vestibulum elit.
+                <br>
+                Vivamus fringilla magna eu urna hendrerit
+                <br>
+                Nec consequat massa hendrerit.
+                <br>
+                Donec ornare nisi a nibh malesuada, ut feugiat diam luctus.
+                <br>
+                Vestibulum ultricies aliquam metus, id viverra libero semper vitae.
+                <br>
+                Praesent sit amet mauris vehicula, venenatis elit eu, faucibus metus.
+                <br>
+                Nunc vel nunc lacinia, eleifend orci eget, vestibulum nunc.
+                <br>
+                Suspendisse id justo quis lectus imperdiet gravida ac et turpis.
+                <br>
+                Curabitur sed blandit augue. Etiam rutrum pharetra massa,
+                <br>
+                in sollicitudin magna.
+                <br>
+                Cras velit lacus, efficitur a enim eu, tristique molestie nisl.
+                <br>
+                Morbi in sapien commodo, auctor magna eget, convallis sapien.
+                <br>
+                Duis accumsan pretium erat nec congue.
+                <br>
+                Sed sed tincidunt quam.
+                <br>
+                Duis condimentum in urna eu vestibulum.
+                <br>
+                Vivamus vitae ligula sit amet dui dictum varius. 
+            </div>
+            <div class="section">
+                <div class="s-header">
+                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it
+                    is pain..."
+                </div>
+                <div class="s-article">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more
+                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <br><br>
+                    Donec vestibulum magna elit, nec blandit tortor bibendum nec. Nullam tempor molestie ipsum, non
+                    pharetra nulla tincidunt et.
+                    Aenean hendrerit est sit amet purus viverra, vel vehicula odio mattis. Maecenas tristique libero
+                    lacus, ac pulvinar orci
+                    pellentesque a. Nullam ultricies porta tortor ac cursus. Vivamus mattis consectetur dignissim.
+                    Maecenas dui ex, mattis et
+                    tristique at, varius eu massa. Etiam nec dignissim dui. Mauris diam erat, gravida sed imperdiet at,
+                    vestibulum eget sem. Ut
+                    vehicula risus libero, eget convallis elit feugiat non. Maecenas vitae commodo magna. Donec blandit
+                    gravida venenatis.
+                    Pellentesque eget pellentesque dui, ac ullamcorper mi. Nullam id mauris mollis, dapibus massa id,
+                    porta diam. Mauris a
+                    ornare justo. Sed eu gravida arcu.
+                    <br><br>
+                    In hac habitasse platea dictumst. Aliquam auctor nec est quis varius. Quisque augue enim, accumsan
+                    et ornare consectetur,
+                    bibendum id augue. Etiam mollis efficitur erat vitae aliquam. Nam dolor ipsum, sagittis in nulla at,
+                    scelerisque venenatis
+                    neque. Sed blandit lacus quis tortor pharetra, et faucibus ante semper. Vestibulum quis quam sapien.
+                    Integer finibus leo
+                    porttitor metus mattis, et finibus erat rhoncus. In hac habitasse platea dictumst. Aenean sit amet
+                    metus vel libero commodo
+                    pellentesque.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel magna tristique, fringilla est a, mollis nisl.
+                    Vivamus viverra arcu erat, hendrerit molestie justo finibus vel. Vivamus arcu nibh, dapibus ac lobortis a, dapibus
+                    at augue. Vivamus congue dolor ante, nec dictum sem rhoncus nec. Nulla at lacus vel est dapibus rutrum. Suspendisse
+                    eu odio vitae sem suscipit fringilla et vel lacus. Integer nulla est, posuere et libero varius, interdum varius lectus.
+                    Fusce luctus viverra metus a faucibus. Etiam scelerisque est ac dui commodo, at aliquet mi facilisis. Aliquam aliquam
+                    nibh vitae ligula hendrerit dapibus. Vivamus condimentum viverra diam vel tincidunt. Suspendisse lacinia cursus tortor
+                    sollicitudin sodales. In in interdum lacus. Vivamus lobortis tempus massa molestie faucibus. Phasellus iaculis finibus
+                    mauris. Curabitur sit amet facilisis ligula.
+                    <br><br>
+                    Donec vestibulum magna elit, nec blandit tortor bibendum nec. Nullam tempor molestie ipsum, non pharetra nulla tincidunt
+                    et. Aenean hendrerit est sit amet purus viverra, vel vehicula odio mattis. Maecenas tristique libero lacus, ac pulvinar
+                    orci pellentesque a. Nullam ultricies porta tortor ac cursus. Vivamus mattis consectetur dignissim. Maecenas dui ex,
+                    mattis et tristique at, varius eu massa. Etiam nec dignissim dui. Mauris diam erat, gravida sed imperdiet at, vestibulum
+                    eget sem. Ut vehicula risus libero, eget convallis elit feugiat non. Maecenas vitae commodo magna. Donec blandit gravida
+                    venenatis. Pellentesque eget pellentesque dui, ac ullamcorper mi. Nullam id mauris mollis, dapibus massa id, porta diam.
+                    Mauris a ornare justo. Sed eu gravida arcu. 
+                </div>
+                <div class="s-footer">
+                    Curabitur tincidunt tellus non nulla efficitur lobortis. Duis vel sapien auctor,
+                    tempus tellus non,
+                    pellentesque tellus. Proin ac odio nec metus finibus tempor. Vivamus fringilla ex vitae nulla
+                    gravida,
+                    a aliquam diam tempus. Suspendisse tempor nibh eu massa auctor, eleifend tincidunt risus aliquet.
+                    Phasellus in venenatis
+                    enim, ac bibendum ante.
+                </div>
+            </div>
+            <div class="aside">
+                Duis varius nec metus in tempor.
+                <br>
+                Curabitur vitae sodales quam.
+                Suspendisse tellus lacus, viverra sit amet dignissim at.
+                <br>
+                Elementum eget risus. Duis hendrerit risus a quam mollis.
+                <br>
+                Ac malesuada turpis iaculis.
+                <br>
+                Proin nec nibh tortor. Sed a lacus leo.
+                <br>
+                Morbi fringilla quam vitae magna volutpat cursus.
+                <br>
+                Donec bibendum mauris ac maximus condimentum.
+                <br>
+                Aliquam erat urna, sodales at elementum at.
+                <br>
+                Fringilla non nisi. 
+            </div>
+        </div>
+        <div class="footer">
+            <div class="address">
+                <a href="https://www.lipsum.com/feed/html" target="_blank">LOREM IPSUM</a>
+            </div>
+            <div class="copyright">
+                COPYRIGHT © 2022 by Anonymous
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
